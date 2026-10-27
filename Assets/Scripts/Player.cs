@@ -4,6 +4,7 @@ public class Player : MonoBehaviour
 {
     [Header("References")]
     public TreeManager tree;
+    public GameManager gameManager;
 
     [Header("Position")]
     public float sideX = 2f;
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
         }
 
         tree.ChopBottomLog();
+        gameManager.AddScore(1);
 
         if (tree.BottomLog.branchSide == currentSide)
         {
@@ -55,6 +57,6 @@ public class Player : MonoBehaviour
     {
         isDead = true;
         GetComponent<SpriteRenderer>().color = Color.gray;
-        Debug.Log("Hit by a branch!");
+        gameManager.GameOver();
     }
 }
