@@ -16,6 +16,11 @@ public class TreeManager : MonoBehaviour
 
     private List<Log> logs = new List<Log>();
 
+    public Log BottomLog
+    {
+        get { return logs[0]; }
+    }
+
     void Start()
     {
         BuildTree();
@@ -52,5 +57,20 @@ public class TreeManager : MonoBehaviour
             return Side.None;
 
         return (Random.value < 0.5f) ? Side.Left : Side.Right;
+    }
+
+    public void ChopBottomLog()
+    {
+        Log chopped = logs[0];
+        logs.RemoveAt(0);
+
+        for (int i = 0; i < logs.Count; i++)
+        {
+            logs[i].transform.position = new Vector3(0f, bottomY + i * logHeight, 0f);
+        }
+
+        chopped.SetBranch(PickBranchSide());
+        chopped.transform.position = new Vector3(0f, bottomY + logs.Count * logHeight, 0f);
+        logs.Add(chopped);
     }
 }
