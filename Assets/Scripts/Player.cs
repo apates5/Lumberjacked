@@ -53,8 +53,10 @@ public class Player : MonoBehaviour
         transform.position = new Vector3(x, transform.position.y, transform.position.z);
     }
 
-    void Die()
+    public void Die()
     {
+        if (isDead) return;
+
         isDead = true;
         GetComponent<SpriteRenderer>().color = Color.gray;
         gameManager.GameOver();
