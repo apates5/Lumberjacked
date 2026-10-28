@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour
     public float timePerChop = 0.3f;
     public float drainRate = 1f;
 
+    [Header("Golden Logs")]
+    public int goldenPoints = 5;
+    public float goldenTimeBonus = 1f;
+
     private int score = 0;
     private int highScore = 0;
     private float timeLeft;
@@ -58,12 +62,21 @@ public class GameManager : MonoBehaviour
         timerFill.fillAmount = timeLeft / maxTime;
     }
 
-    public void AddScore(int points)
+    public void LogChopped(LogKind kind)
     {
         hasStarted = true;
+
+        int points = 1;
+        float timeBonus = timePerChop;
+        if (kind == LogKind.Golden)
+        {
+            points = goldenPoints;
+            timeBonus = goldenTimeBonus;
+        }
+
         score += points;
 
-        timeLeft = Mathf.Min(timeLeft + timePerChop, maxTime);
+        timeLeft = Mathf.Min(timeLeft + timeBonus, maxTime);
 
         UpdateUI();
     }

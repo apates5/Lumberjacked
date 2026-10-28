@@ -1031,6 +1031,8 @@ MonoBehaviour:
   bottomY: -4
   safeLogs: 2
   branchChance: 0.6
+  knottedChance: 0.15
+  goldenChance: 0.05
 --- !u!4 &1562842743
 Transform:
   m_ObjectHideFlags: 0

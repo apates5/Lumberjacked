@@ -37,8 +37,14 @@ public class Player : MonoBehaviour
             return;
         }
 
+        Log bottom = tree.BottomLog;
+
+        if (!bottom.TakeHit()) return;
+
+        LogKind choppedKind = bottom.kind;
+
         tree.ChopBottomLog();
-        gameManager.AddScore(1);
+        gameManager.LogChopped(choppedKind);
 
         if (tree.BottomLog.branchSide == currentSide)
         {

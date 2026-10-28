@@ -141,7 +141,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Log
   branchLeft: {fileID: 6245819507959971354}
   branchRight: {fileID: 881330004206379592}
+  trunkRenderer: {fileID: 946071101349153287}
+  normalColor: {r: 0.54509807, g: 0.3529412, b: 0.16862746, a: 1}
+  knottedColor: {r: 0.2901961, g: 0.1882353, b: 0.1254902, a: 1}
+  crackedColor: {r: 0.6901961, g: 0.5019608, b: 0.3137255, a: 1}
+  goldenColor: {r: 1, g: 0.84313726, b: 0, a: 1}
   branchSide: 0
+  kind: 0
 --- !u!1 &6245819507959971354
 GameObject:
   m_ObjectHideFlags: 0
