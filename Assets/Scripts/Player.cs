@@ -64,9 +64,23 @@ public class Player : MonoBehaviour
 
         Log bottom = tree.BottomLog;
 
-        if (!bottom.TakeHit()) return;
+        if (!bottom.TakeHit())
+        {
+            SoundManager.Instance.Play(SoundManager.Instance.knottedHit);
+            return;
+        }
 
         LogKind choppedKind = bottom.kind;
+
+
+        if (choppedKind == LogKind.Golden)
+        {
+            SoundManager.Instance.Play(SoundManager.Instance.golden);
+        }
+        else
+        {
+            SoundManager.Instance.Play(SoundManager.Instance.chop);
+        }
 
         tree.ChopBottomLog();
         gameManager.LogChopped(choppedKind);
@@ -100,6 +114,7 @@ public class Player : MonoBehaviour
         if (isDead) return;
 
         isDead = true;
+        SoundManager.Instance.Play(SoundManager.Instance.death);
         bodyRenderer.sprite = deadBody;
         axeRenderer.sprite = deadAxe;
         gameManager.GameOver();

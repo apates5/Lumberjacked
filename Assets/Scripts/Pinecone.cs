@@ -23,6 +23,7 @@ public class Pinecone : MonoBehaviour
         transform.position = new Vector3(x, 0f, 0f);
 
         cone.localPosition = new Vector3(0f, startY, 0f);
+        SoundManager.Instance.Play(SoundManager.Instance.pineconeFall);
     }
 
     void Update()
@@ -40,6 +41,10 @@ public class Pinecone : MonoBehaviour
             if (player.currentSide == side)
             {
                 player.Die();
+            }
+            else
+            {
+                SoundManager.Instance.Play(SoundManager.Instance.pineconeLand);
             }
 
             Destroy(gameObject);
