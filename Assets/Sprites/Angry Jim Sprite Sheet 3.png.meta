@@ -1,0 +1,847 @@
+fileFormatVersion: 2
+guid: 40445da0a050e4011ae1754c4d990d0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8390999210247605286
+    second: Angry Jim Sprite Sheet 3_0
+  - first:
+      213: 118914484105608985
+    second: Angry Jim Sprite Sheet 3_1
+  - first:
+      213: 2369624834567814953
+    second: Angry Jim Sprite Sheet 3_2
+  - first:
+      213: 8407060152835804533
+    second: Angry Jim Sprite Sheet 3_3
+  - first:
+      213: -120148578513622064
+    second: Angry Jim Sprite Sheet 3_4
+  - first:
+      213: 3486797396558755986
+    second: Angry Jim Sprite Sheet 3_5
+  - first:
+      213: -6892028309658372619
+    second: Angry Jim Sprite Sheet 3_6
+  - first:
+      213: -8043520759382529275
+    second: Angry Jim Sprite Sheet 3_7
+  - first:
+      213: 3168208670276537464
+    second: Angry Jim Sprite Sheet 3_8
+  - first:
+      213: -6803059461834514187
+    second: Angry Jim Sprite Sheet 3_9
+  - first:
+      213: 610144596185316797
+    second: Angry Jim Sprite Sheet 3_10
+  - first:
+      213: 3545838997019942783
+    second: Angry Jim Sprite Sheet 3_11
+  - first:
+      213: 2432538881133028524
+    second: Angry Jim Sprite Sheet 3_12
+  - first:
+      213: -6934786360974854704
+    second: Angry Jim Sprite Sheet 3_13
+  - first:
+      213: -4006090357800084979
+    second: Angry Jim Sprite Sheet 3_14
+  - first:
+      213: 7344100888935863887
+    second: Angry Jim Sprite Sheet 3_15
+  - first:
+      213: 6593376682933981869
+    second: Angry Jim Sprite Sheet 3_16
+  - first:
+      213: 301740229030625890
+    second: Angry Jim Sprite Sheet 3_17
+  - first:
+      213: -5071172293442063930
+    second: Angry Jim Sprite Sheet 3_18
+  - first:
+      213: 4424866534961897236
+    second: Angry Jim Sprite Sheet 3_19
+  - first:
+      213: -8974785910109616926
+    second: Angry Jim Sprite Sheet 3_20
+  - first:
+      213: 2150405598331255980
+    second: Angry Jim Sprite Sheet 3_21
+  - first:
+      213: -3501584968994399887
+    second: Angry Jim Sprite Sheet 3_22
+  - first:
+      213: 6489632338246271606
+    second: Angry Jim Sprite Sheet 3_23
+  - first:
+      213: 9116256124112452961
+    second: Angry Jim Sprite Sheet 3_24
+  - first:
+      213: 1343010052688090108
+    second: Angry Jim Sprite Sheet 3_25
+  - first:
+      213: -3978165798515160691
+    second: Angry Jim Sprite Sheet 3_26
+  - first:
+      213: 173790443120791191
+    second: Angry Jim Sprite Sheet 3_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 224
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3bb9afcae2d8b80800000000000000
+      internalID: -8390999210247605286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 224
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f73cfd71876a100800000000000000
+      internalID: 118914484105608985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 192
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fbb537b3992e020800000000000000
+      internalID: 2369624834567814953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 192
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d8e1f9aa0eba470800000000000000
+      internalID: 8407060152835804533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 192
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db6d612185255ef0800000000000000
+      internalID: -120148578513622064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 192
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29834a122c7936030800000000000000
+      internalID: 3486797396558755986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 192
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f570e494c89a50a0800000000000000
+      internalID: -6892028309658372619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 192
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b26895c7caf5090800000000000000
+      internalID: -8043520759382529275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 192
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c452eeffcb7fb20800000000000000
+      internalID: 3168208670276537464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_9
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 192
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f06e7fa67da691a0800000000000000
+      internalID: -6803059461834514187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_10
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 192
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbdff3d074ba77800800000000000000
+      internalID: 610144596185316797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_11
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 192
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7fd918f7c9553130800000000000000
+      internalID: 3545838997019942783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 160
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4a248693d12c120800000000000000
+      internalID: 2432538881133028524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_13
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 160
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5bed8fb80b2cf90800000000000000
+      internalID: -6934786360974854704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_14
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 160
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a55357b028768c0800000000000000
+      internalID: -4006090357800084979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 132
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4617a709dc7be560800000000000000
+      internalID: 7344100888935863887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 131
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da29f90f821608b50800000000000000
+      internalID: 6593376682933981869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_17
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 101
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262c0ddb32fff2400800000000000000
+      internalID: 301740229030625890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 66
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c13596daa39f99b0800000000000000
+      internalID: -5071172293442063930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_19
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 69
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41fdaea6ba8486d30800000000000000
+      internalID: 4424866534961897236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_20
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 70
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e44cb4e3c7237380800000000000000
+      internalID: -8974785910109616926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 40
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cacbb839f76c7dd10800000000000000
+      internalID: 2150405598331255980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 40
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179dd3cd50fd76fc0800000000000000
+      internalID: -3501584968994399887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_23
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 39
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6728e046a3ecf0a50800000000000000
+      internalID: 6489632338246271606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_24
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 39
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16db33715a2738e70800000000000000
+      internalID: 9116256124112452961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 39
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf39040078453a210800000000000000
+      internalID: 1343010052688090108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8945e19847bac8c0800000000000000
+      internalID: -3978165798515160691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry Jim Sprite Sheet 3_27
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 4
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e829bbc7d696200800000000000000
+      internalID: 173790443120791191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 16e55f6ec9eb24a1ca20fd4c2fc89e81
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Angry Jim Sprite Sheet 3_0: -8390999210247605286
+      Angry Jim Sprite Sheet 3_1: 118914484105608985
+      Angry Jim Sprite Sheet 3_10: 610144596185316797
+      Angry Jim Sprite Sheet 3_11: 3545838997019942783
+      Angry Jim Sprite Sheet 3_12: 2432538881133028524
+      Angry Jim Sprite Sheet 3_13: -6934786360974854704
+      Angry Jim Sprite Sheet 3_14: -4006090357800084979
+      Angry Jim Sprite Sheet 3_15: 7344100888935863887
+      Angry Jim Sprite Sheet 3_16: 6593376682933981869
+      Angry Jim Sprite Sheet 3_17: 301740229030625890
+      Angry Jim Sprite Sheet 3_18: -5071172293442063930
+      Angry Jim Sprite Sheet 3_19: 4424866534961897236
+      Angry Jim Sprite Sheet 3_2: 2369624834567814953
+      Angry Jim Sprite Sheet 3_20: -8974785910109616926
+      Angry Jim Sprite Sheet 3_21: 2150405598331255980
+      Angry Jim Sprite Sheet 3_22: -3501584968994399887
+      Angry Jim Sprite Sheet 3_23: 6489632338246271606
+      Angry Jim Sprite Sheet 3_24: 9116256124112452961
+      Angry Jim Sprite Sheet 3_25: 1343010052688090108
+      Angry Jim Sprite Sheet 3_26: -3978165798515160691
+      Angry Jim Sprite Sheet 3_27: 173790443120791191
+      Angry Jim Sprite Sheet 3_3: 8407060152835804533
+      Angry Jim Sprite Sheet 3_4: -120148578513622064
+      Angry Jim Sprite Sheet 3_5: 3486797396558755986
+      Angry Jim Sprite Sheet 3_6: -6892028309658372619
+      Angry Jim Sprite Sheet 3_7: -8043520759382529275
+      Angry Jim Sprite Sheet 3_8: 3168208670276537464
+      Angry Jim Sprite Sheet 3_9: -6803059461834514187
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
