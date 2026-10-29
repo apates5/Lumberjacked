@@ -23,11 +23,27 @@ public class GameManager : MonoBehaviour
     public int goldenPoints = 5;
     public float goldenTimeBonus = 1f;
 
+    [Header("Difficulty")]
+    public HazardSpawner hazardSpawner;
+    public int chopsPerStage = 50;
+    public float drainIncrease = 0.2f;
+    public float maxDrainRate = 2.5f;
+    public float hazardDelayMultiplier = 0.85f;
+    public float minHazardDelay = 1.5f;
+
+    private int chops = 0;
+    private int stage = 1;
+
     private int score = 0;
     private int highScore = 0;
     private float timeLeft;
     private bool hasStarted = false;
     private bool isGameOver = false;
+
+    public bool IsPlaying
+    {
+        get { return hasStarted && !isGameOver; }
+    }
 
     void Start()
     {
@@ -76,6 +92,12 @@ public class GameManager : MonoBehaviour
 
         score += points;
 
+        chops++;
+        if (chops % chopsPerStage == 0)
+        {
+            NextStage();
+        }
+
         timeLeft = Mathf.Min(timeLeft + timeBonus, maxTime);
 
         UpdateUI();
@@ -96,7 +118,14 @@ public class GameManager : MonoBehaviour
         gameOverText.SetActive(true);
         UpdateUI();
     }
-
+        void NextStage()
+    {
+        stage++;
+        drainRate = Mathf.Min(drainRate + drainIncrease, maxDrainRate);
+        hazardSpawner.minDelay = Mathf.Max(hazardSpawner.minDelay * hazardDelayMultiplier, minHazardDelay);
+        hazardSpawner.maxDelay = Mathf.Max(hazardSpawner.maxDelay * hazardDelayMultiplier, minHazardDelay + 1f);
+        Debug.Log("Stage " + stage);
+    }
     void UpdateUI()
     {
         scoreText.text = score.ToString();

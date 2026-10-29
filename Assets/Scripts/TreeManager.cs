@@ -83,7 +83,15 @@ public class TreeManager : MonoBehaviour
 
         return LogKind.Normal;
     }
-
+    public bool IsSideClear(Side side, int count)
+    {
+        for (int i = 0; i < count && i < logs.Count; i++)
+        {
+            if (logs[i].branchSide == side)
+                return false;
+        }
+        return true;
+    }
     public void ChopBottomLog()
     {
         Log chopped = logs[0];
