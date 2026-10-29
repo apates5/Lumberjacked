@@ -13,14 +13,13 @@ public class Log : MonoBehaviour
     [Header("Trunk")]
     public SpriteRenderer trunkRenderer;
 
-    [Header("Colors")]
-    public Color normalColor  = new Color32(0x8B, 0x5A, 0x2B, 0xFF);
-    public Color knottedColor = new Color32(0x4A, 0x30, 0x20, 0xFF);
-    public Color crackedColor = new Color32(0xB0, 0x80, 0x50, 0xFF);
-    public Color goldenColor  = new Color32(0xFF, 0xD7, 0x00, 0xFF);
+    [Header("Trunk Sprites")]
+    public Sprite normalSprite;
+    public Sprite knottedSprite;
+    public Sprite crackedSprite;
+    public Sprite goldenSprite;
 
     public Side branchSide = Side.None;
-
     public LogKind kind = LogKind.Normal;
 
     private int hitsLeft = 1;
@@ -39,17 +38,17 @@ public class Log : MonoBehaviour
         if (kind == LogKind.Knotted)
         {
             hitsLeft = 2;
-            trunkRenderer.color = knottedColor;
+            trunkRenderer.sprite = knottedSprite;
         }
         else if (kind == LogKind.Golden)
         {
             hitsLeft = 1;
-            trunkRenderer.color = goldenColor;
+            trunkRenderer.sprite = goldenSprite;
         }
         else
         {
             hitsLeft = 1;
-            trunkRenderer.color = normalColor;
+            trunkRenderer.sprite = normalSprite;
         }
     }
 
@@ -59,7 +58,7 @@ public class Log : MonoBehaviour
 
         if (hitsLeft > 0)
         {
-            trunkRenderer.color = crackedColor;
+            trunkRenderer.sprite = crackedSprite;
             return false;
         }
 
