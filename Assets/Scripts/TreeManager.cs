@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// the tree is just a list of logs, index 0 is the bottom one
 public class TreeManager : MonoBehaviour
 {
     [Header("Setup")]
@@ -8,7 +9,7 @@ public class TreeManager : MonoBehaviour
     public int logCount = 10;
     public float logHeight = 1f;
     public float bottomY = -4f;
-    public int safeLogs = 2;
+    public int safeLogs = 2;   // no branches at the start so you don't die right away
 
     [Header("Branches")]
     [Range(0f, 1f)]
@@ -22,6 +23,7 @@ public class TreeManager : MonoBehaviour
 
     private List<Log> logs = new List<Log>();
 
+    // log next to the player
     public Log BottomLog
     {
         get { return logs[0]; }
@@ -32,6 +34,7 @@ public class TreeManager : MonoBehaviour
         BuildTree();
     }
 
+    // stack up the starting logs
     void BuildTree()
     {
         for (int i = 0; i < logCount; i++)
@@ -62,6 +65,7 @@ public class TreeManager : MonoBehaviour
 
     Side PickBranchSide()
     {
+        // log after a branch is always empty, so there's always a safe move
         if (logs.Count > 0 && logs[logs.Count - 1].branchSide != Side.None)
             return Side.None;
 
@@ -71,6 +75,7 @@ public class TreeManager : MonoBehaviour
         return (Random.value < 0.5f) ? Side.Left : Side.Right;
     }
 
+    // one roll decides golden, knotted or normal
     LogKind PickLogType()
     {
         float roll = Random.value;
@@ -83,6 +88,8 @@ public class TreeManager : MonoBehaviour
 
         return LogKind.Normal;
     }
+
+    // true if none of the bottom 'count' logs have a branch on that side
     public bool IsSideClear(Side side, int count)
     {
         for (int i = 0; i < count && i < logs.Count; i++)
@@ -92,6 +99,8 @@ public class TreeManager : MonoBehaviour
         }
         return true;
     }
+
+    // take off the bottom log, shift everything down, reuse it on top
     public void ChopBottomLog()
     {
         Log chopped = logs[0];
@@ -102,6 +111,7 @@ public class TreeManager : MonoBehaviour
             logs[i].transform.position = new Vector3(0f, bottomY + i * logHeight, 0f);
         }
 
+        // reused instead of destroying and making a new one
         chopped.SetBranch(PickBranchSide());
         chopped.SetKind(PickLogType());
         chopped.transform.position = new Vector3(0f, bottomY + logs.Count * logHeight, 0f);

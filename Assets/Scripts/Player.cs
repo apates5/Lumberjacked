@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// lumberjack controls: switch sides, chop, die
 public class Player : MonoBehaviour
 {
     [Header("References")]
@@ -7,7 +8,7 @@ public class Player : MonoBehaviour
     public GameManager gameManager;
 
     [Header("Position")]
-    public float sideX = 2f;
+    public float sideX = 2f;   // distance from the middle of the tree
 
     [Header("Sprites")]
     public SpriteRenderer bodyRenderer;
@@ -16,7 +17,7 @@ public class Player : MonoBehaviour
     public Sprite axeRest;
     public Sprite axeSwing;
     public Sprite deadAxe;
-    public float swingTime = 0.1f;
+    public float swingTime = 0.1f;   // how long the swing frame shows
 
     public Side currentSide = Side.Left;
     public bool isDead = false;
@@ -32,6 +33,7 @@ public class Player : MonoBehaviour
     {
         if (isDead) return;
 
+        // put the axe back after a swing
         if (swingTimer > 0f)
         {
             swingTimer -= Time.deltaTime;
@@ -41,6 +43,7 @@ public class Player : MonoBehaviour
             }
         }
 
+        // arrows or A/D
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             ChopFrom(Side.Left);
@@ -56,6 +59,7 @@ public class Player : MonoBehaviour
         MoveTo(side);
         SwingAxe();
 
+        // walked into a branch
         if (tree.BottomLog.branchSide == currentSide)
         {
             Die();
@@ -64,12 +68,14 @@ public class Player : MonoBehaviour
 
         Log bottom = tree.BottomLog;
 
+        // knotted log took its first hit but didn't break yet
         if (!bottom.TakeHit())
         {
             SoundManager.Instance.Play(SoundManager.Instance.knottedHit);
             return;
         }
 
+        // grab the type now, the log gets reused at the top after the chop
         LogKind choppedKind = bottom.kind;
 
 
@@ -85,6 +91,7 @@ public class Player : MonoBehaviour
         tree.ChopBottomLog();
         gameManager.LogChopped(choppedKind);
 
+        // branch dropped down onto the player
         if (tree.BottomLog.branchSide == currentSide)
         {
             Die();
@@ -98,6 +105,7 @@ public class Player : MonoBehaviour
         float x = (side == Side.Left) ? -sideX : sideX;
         transform.position = new Vector3(x, transform.position.y, transform.position.z);
 
+        // flip so he always faces the tree
         Vector3 scale = transform.localScale;
         scale.x = (side == Side.Left) ? Mathf.Abs(scale.x) : -Mathf.Abs(scale.x);
         transform.localScale = scale;
@@ -109,6 +117,7 @@ public class Player : MonoBehaviour
         swingTimer = swingTime;
     }
 
+    // branch, pinecone, or timer running out all end up here
     public void Die()
     {
         if (isDead) return;

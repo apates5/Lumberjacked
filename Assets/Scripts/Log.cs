@@ -4,6 +4,7 @@ public enum Side { None, Left, Right }
 
 public enum LogKind { Normal, Knotted, Golden }
 
+// one piece of the tree, handles its branch, type and hits
 public class Log : MonoBehaviour
 {
     [Header("Branch Objects")]
@@ -24,6 +25,7 @@ public class Log : MonoBehaviour
 
     private int hitsLeft = 1;
 
+    // only show the branch on the matching side
     public void SetBranch(Side side)
     {
         branchSide = side;
@@ -31,6 +33,7 @@ public class Log : MonoBehaviour
         branchRight.SetActive(side == Side.Right);
     }
 
+    // sets hits needed + sprite for the log type
     public void SetKind(LogKind newKind)
     {
         kind = newKind;
@@ -52,10 +55,12 @@ public class Log : MonoBehaviour
         }
     }
 
+    // returns true if the log broke
     public bool TakeHit()
     {
         hitsLeft--;
 
+        // knotted log survived, show the crack
         if (hitsLeft > 0)
         {
             trunkRenderer.sprite = crackedSprite;

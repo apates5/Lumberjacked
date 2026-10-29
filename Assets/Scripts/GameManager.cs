@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
+// score, timer, high score, difficulty, game over + restart
 public class GameManager : MonoBehaviour
 {
     [Header("References")]
@@ -16,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Timer")]
     public float maxTime = 5f;
-    public float timePerChop = 0.3f;
+    public float timePerChop = 0.3f;   // time added back each chop
     public float drainRate = 1f;
 
     [Header("Golden Logs")]
@@ -37,9 +38,10 @@ public class GameManager : MonoBehaviour
     private int score = 0;
     private int highScore = 0;
     private float timeLeft;
-    private bool hasStarted = false;
+    private bool hasStarted = false;   // timer waits for the first chop
     private bool isGameOver = false;
 
+    // used by the spawner so pinecones only fall mid-game
     public bool IsPlaying
     {
         get { return hasStarted && !isGameOver; }
@@ -55,6 +57,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        // after game over only thing left is R to restart
         if (isGameOver)
         {
             if (Input.GetKeyDown(KeyCode.R))
@@ -64,6 +67,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        // drain the timer, running out counts as dying
         if (hasStarted)
         {
             timeLeft -= drainRate * Time.deltaTime;
@@ -78,10 +82,12 @@ public class GameManager : MonoBehaviour
         timerFill.fillAmount = timeLeft / maxTime;
     }
 
+    // called by the player whenever a log breaks
     public void LogChopped(LogKind kind)
     {
         hasStarted = true;
 
+        // golden logs give more points and more time
         int points = 1;
         float timeBonus = timePerChop;
         if (kind == LogKind.Golden)
@@ -92,12 +98,14 @@ public class GameManager : MonoBehaviour
 
         score += points;
 
+        // every chopsPerStage logs the game gets harder
         chops++;
         if (chops % chopsPerStage == 0)
         {
             NextStage();
         }
 
+        // add time back but don't go over max
         timeLeft = Mathf.Min(timeLeft + timeBonus, maxTime);
 
         UpdateUI();
@@ -108,6 +116,7 @@ public class GameManager : MonoBehaviour
         if (isGameOver) return;
         isGameOver = true;
 
+        // save new best score
         if (score > highScore)
         {
             highScore = score;
@@ -118,7 +127,9 @@ public class GameManager : MonoBehaviour
         gameOverText.SetActive(true);
         UpdateUI();
     }
-        void NextStage()
+
+    // faster timer + more pinecones, both capped so it stays beatable
+    void NextStage()
     {
         stage++;
         drainRate = Mathf.Min(drainRate + drainIncrease, maxDrainRate);
@@ -126,6 +137,7 @@ public class GameManager : MonoBehaviour
         hazardSpawner.maxDelay = Mathf.Max(hazardSpawner.maxDelay * hazardDelayMultiplier, minHazardDelay + 1f);
         Debug.Log("Stage " + stage);
     }
+
     void UpdateUI()
     {
         scoreText.text = score.ToString();
